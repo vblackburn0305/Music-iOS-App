@@ -18,9 +18,10 @@ struct Music_iOS: View {
                     VStack(spacing: 20) {
                         Spacer()
                         VStack {
-                            Text("Level 1: Chords")
-                                .font(.title2)
-                            Text("Learn about what chords are in a key and what key a song is by the chord progression!")
+                            Text("Level 1: Intervals and scales")
+                                .font(.title3)
+                                .padding(.leading, UIScreen.main.bounds.width * (1 / 9))
+                            Text("Learn about the building blocks of music and how they build scales!")
                                 .font(.body)
                                 .fontWeight(.thin)
                                 .padding(.leading, UIScreen.main.bounds.width * (1 / 9))
