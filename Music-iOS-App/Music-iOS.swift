@@ -21,20 +21,11 @@ struct Music_iOS: View {
                         
                         Music_iOS_Section_One(geometry: geometry)
                         
-                        
-                        VStack {
-                            Text("Level 2: Scales")
-                                .font(.title2)
-                            Text("Learn about scale formulas for the major scale, major pentatonic scale, the major scale modes and more!")
-                                .font(.body)
-                                .fontWeight(.thin)
-                        }
-                        .frame(width: geometry.size.width * 0.9, height: geometry.size.height * 0.15)
-                        .background(Color.white)
-                        
+                        Music_iOS_Section_Two(geometry: geometry)
+
                         VStack {
                             Text("Level 3: Building Chords")
-                                .font(.title2)
+                                .font(.title3)
                             Text("Learn about how chords are built from intervals and their relationship to scales!")
                                 .font(.body)
                                 .fontWeight(.thin)
