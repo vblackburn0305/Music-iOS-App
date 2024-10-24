@@ -17,54 +17,10 @@ struct Music_iOS: View {
                 ScrollView {
                     VStack(spacing: 20) {
                         Spacer()
-                        VStack {
-                            Text("Level 1: Intervals and scales")
-                                .font(.title3)
-                                .padding(.leading, UIScreen.main.bounds.width * (1 / 9))
-                            Text("Learn about the building blocks of music and how they build scales!")
-                                .font(.body)
-                                .fontWeight(.thin)
-                                .padding(.leading, UIScreen.main.bounds.width * (1 / 9))
-                        }
-                        .overlay(
-                            ZStack {
-                                // First green circle with "do"
-                                ZStack {
-                                    Circle()
-                                        .fill(Color.green)
-                                        .frame(width: geometry.size.width * 0.1, height: geometry.size.height * 0.1)
-                                    Text("do")
-                                        .foregroundColor(.white)
-                                        .font(.headline)
-                                }
-                                .offset(x: -geometry.size.width * 0.35)
-                                .offset(y: geometry.size.height * 0.055)
-
-                                // Second blue circle with "re" above the first circle
-                                ZStack {
-                                    Circle()
-                                        .fill(Color.blue)
-                                        .frame(width: geometry.size.width * 0.1, height: geometry.size.height * 0.1)
-                                    Text("re")
-                                        .foregroundColor(.white)
-                                        .font(.headline)
-                                }
-                                .offset(x: -geometry.size.width * 0.35, y: -geometry.size.height * 0.001) // Positioned above the first circle
-                                
-                                ZStack {
-                                    Circle()
-                                        .fill(Color.purple)
-                                        .frame(width: geometry.size.width * 0.1, height: geometry.size.height * 0.1)
-                                    Text("mi")
-                                        .foregroundColor(.white)
-                                        .font(.headline)
-                                }
-                                .offset(x: -geometry.size.width * 0.35, y: -geometry.size.height * 0.055) // Positioned above the first circle
-                            }
-                        )
-                        .padding()
-                        .frame(width: geometry.size.width * 0.9, height: geometry.size.height * 0.175)
-                        .background(Color.white)
+                        
+                        
+                        Music_iOS_Section_One(geometry: geometry)
+                        
                         
                         VStack {
                             Text("Level 2: Scales")
