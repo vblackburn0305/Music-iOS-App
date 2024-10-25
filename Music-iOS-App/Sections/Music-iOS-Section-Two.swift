@@ -21,6 +21,15 @@ struct Music_iOS_Section_Two: View {
                 .padding(.leading, UIScreen.main.bounds.width * (1.4 / 9))
             
         }
+        .overlay(
+            ZStack {
+                Image("C-Chord")
+                    .resizable()
+                    .frame(width: geometry.size.width * 0.1, height: geometry.size.height * 0.1)
+                    .offset(x: -geometry.size.width * 0.35, y: -geometry.size.height * 0.005)
+
+            }
+        )
         .padding()
         .frame(width: geometry.size.width * 0.9, height: geometry.size.height * 0.15)
         .background(Color.white)
