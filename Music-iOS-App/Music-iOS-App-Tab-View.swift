@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct Music_iOS_App_Tab_View: View {
+    
+    @State var selectedTab: Int = 0
+    
     var body: some View {
         TabView {
             Music_iOS()
@@ -15,16 +18,22 @@ struct Music_iOS_App_Tab_View: View {
                     Image(systemName: "house.fill")
                     Text("Home")
                 }
+                .tag(0)
+            
             Text("Read Tab")
                 .tabItem {
                     Image(systemName: "book.fill")
                     Text("Read")
                 }
+                .tag(1)
+            
             Text("Quiz Tab")
                 .tabItem {
                     Image(systemName: "square.and.pencil")
                     Text("Quiz")
                 }
+                .tag(2)
+            
         }
     }
 }

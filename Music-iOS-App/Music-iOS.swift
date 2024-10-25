@@ -2,7 +2,6 @@ import SwiftUI
 
 struct Music_iOS: View {
     var body: some View {
-        NavigationStack {
             ZStack {
                 Color.gray.opacity(0.2)
                     .ignoresSafeArea()
@@ -11,6 +10,8 @@ struct Music_iOS: View {
                     ScrollView {
                         VStack(spacing: 20) {
                             Spacer()
+                            
+                            Music_iOS_Section_Intro(geometry: geometry)
 
                             Music_iOS_Section_One(geometry: geometry)
                             
@@ -24,8 +25,6 @@ struct Music_iOS: View {
                     }
                 }
             }
-            .statusBarHidden(false) // Ensure the status bar is visible
-        }
     }
 }
 
