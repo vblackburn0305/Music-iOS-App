@@ -21,7 +21,7 @@ struct Music_iOS_Section_One: View {
                     width: geometry.size.width * 0.1,
                     height: geometry.size.height * 0.1,
                     xOffset: -geometry.size.width * 0.35,
-                    yOffset: geometry.size.height * 0.055
+                    yOffset: geometry.size.height * 0.058
                 )
                 CircleOverlayView(
                     color: .blue,
@@ -29,7 +29,7 @@ struct Music_iOS_Section_One: View {
                     width: geometry.size.width * 0.1,
                     height: geometry.size.height * 0.1,
                     xOffset: -geometry.size.width * 0.35,
-                    yOffset: -geometry.size.height * 0.001
+                    yOffset: geometry.size.height * 0.001
                 )
                 CircleOverlayView(
                     color: .purple,
@@ -42,7 +42,7 @@ struct Music_iOS_Section_One: View {
             }
         )
         .padding()
-        .frame(width: geometry.size.width * 0.9, height: geometry.size.height * 0.175)
+        .frame(width: geometry.size.width * 0.9, height: geometry.size.height * 0.18)
         .background(Color.white)
     }
 }
