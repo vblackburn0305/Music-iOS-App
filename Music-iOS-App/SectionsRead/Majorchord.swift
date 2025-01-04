@@ -25,7 +25,7 @@ struct Majorchord: View {
                 Text("Building the Major Triad")
                     .font(.headline)
                 
-                Text("To build a major chord, start with the root note, then add the major third and the perfect fifth. This three-note combination is known as a triad and is the basis of the major chord.\n\n1. **Root**: The starting note of the chord.\n2. **Major Third**: The note that is four half steps (or two whole steps) above the root.\n3. **Perfect Fifth**: The note that is seven half steps (or three and a half whole steps) above the root.\n\nIn the C major chord, this gives us the notes C (root), E (major third), and G (perfect fifth).")
+                Text("To build a major chord, start with the root note, for this example the root will be C, then add the major third from C, which is E and, then add the major third from E, which is G. This stacking of major thirds gives us the notes C E G, which are the notes for the C major chord. This three-note combination is known as a triad and is the basis of the major chord.\n\n1. **Root**: The starting note of the chord.\n2. **Major Third**: The note that is four half steps (or two whole steps) above the root.\n3. **Perfect Fifth**: The note that is seven half steps (or three and a half whole steps) above the root.\n\nIn the C major chord, this gives us the notes C (root), E (major third), and G (perfect fifth).")
                 
                 Text("Why Major Thirds?")
                     .font(.headline)
