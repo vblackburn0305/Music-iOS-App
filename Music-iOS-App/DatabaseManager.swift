@@ -3,10 +3,11 @@ import SQLite
 
 /// Represents the current state of a single quiz.
 struct QuizState {
-    let id: Int64?        // Primary key (auto-increment)
-    let levelName: String // e.g. "Grade 1", "Grade 2", etc.
-    let didPass: Bool     // Has the user passed this quiz yet?
-    let hasGoldStar: Bool // Should we show a gold star in the UI?
+    let id: Int64?         // Primary key (auto-increment)
+    let levelName: String  // e.g. "Level 1"
+    let didPass: Bool      // true if user passed
+    let hasGoldStar: Bool  // true if user earned a star
+    let hasAttempted: Bool // NEW: true if the quiz has ever been finished (pass OR fail)
 }
 
 class DatabaseManager {
@@ -20,6 +21,7 @@ class DatabaseManager {
     private let level = SQLite.Expression<String>("level")
     private let didPass = SQLite.Expression<Bool>("didPass")
     private let hasGoldStar = SQLite.Expression<Bool>("hasGoldStar")
+    private let hasAttempted = SQLite.Expression<Bool>("hasAttempted") // NEW
     
     // MARK: - Init
     private init() {
@@ -30,7 +32,7 @@ class DatabaseManager {
                 in: .userDomainMask
             ).first!
             let dbPath = documentsDirectory
-                .appendingPathComponent("music_quizzes.sqlite").path
+                .appendingPathComponent("quizzes.sqlite").path
             
             // 2) Create or open the database
             db = try Connection(dbPath)
@@ -39,9 +41,10 @@ class DatabaseManager {
             try db?.run(quizzesTable.create(ifNotExists: true) { table in
                 table.column(id, primaryKey: .autoincrement)
                 table.column(level, unique: true)
-                // Removing defaultValue here:
-                table.column(didPass)
-                table.column(hasGoldStar)
+                table.column(didPass, defaultValue: false)
+                table.column(hasGoldStar, defaultValue: false)
+                // The new column with a default value
+                table.column(hasAttempted, defaultValue: false)
             })
         } catch {
             print("ERROR: Could not initialize SQLite database: \(error)")
@@ -58,11 +61,11 @@ class DatabaseManager {
             if getQuizState(for: levelName) != nil {
                 return
             }
-            // Just set both booleans to false when inserting:
             let insert = quizzesTable.insert(
                 level <- levelName,
                 didPass <- false,
-                hasGoldStar <- false
+                hasGoldStar <- false,
+                hasAttempted <- false
             )
             try db.run(insert)
         } catch {
@@ -70,7 +73,6 @@ class DatabaseManager {
         }
     }
     
-    /// Fetch the quiz state (pass/fail, star) for a given level name.
     func getQuizState(for levelName: String) -> QuizState? {
         guard let db = db else { return nil }
         do {
@@ -80,7 +82,8 @@ class DatabaseManager {
                     id: row[id],
                     levelName: row[level],
                     didPass: row[didPass],
-                    hasGoldStar: row[hasGoldStar]
+                    hasGoldStar: row[hasGoldStar],
+                    hasAttempted: row[hasAttempted] // NEW
                 )
             }
         } catch {
@@ -89,7 +92,8 @@ class DatabaseManager {
         return nil
     }
     
-    /// Update the pass/fail and gold star status for the specified quiz.
+    /// Update the pass/fail and gold star status for the specified quiz,
+    /// and mark hasAttempted = true every time a quiz finishes.
     func updateQuiz(levelName: String, passed: Bool, goldStar: Bool) {
         guard let db = db else { return }
         do {
@@ -97,7 +101,8 @@ class DatabaseManager {
             try db.run(
                 quizRow.update(
                     didPass <- passed,
-                    hasGoldStar <- goldStar
+                    hasGoldStar <- goldStar,
+                    hasAttempted <- true   // always true on finishing a quiz
                 )
             )
         } catch {
@@ -115,7 +120,8 @@ class DatabaseManager {
                     id: row[id],
                     levelName: row[level],
                     didPass: row[didPass],
-                    hasGoldStar: row[hasGoldStar]
+                    hasGoldStar: row[hasGoldStar],
+                    hasAttempted: row[hasAttempted]
                 )
                 results.append(quiz)
             }
