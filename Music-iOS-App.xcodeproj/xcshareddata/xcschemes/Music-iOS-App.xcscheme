@@ -16,7 +16,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A56AB9C92CC96AE200D35FA8"
-               BuildableName = "Music-iOS-Theory.app"
+               BuildableName = "Beginner Theory.app"
                BlueprintName = "Music-iOS-App"
                ReferencedContainer = "container:Music-iOS-App.xcodeproj">
             </BuildableReference>
@@ -45,7 +45,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A56AB9C92CC96AE200D35FA8"
-            BuildableName = "Music-iOS-Theory.app"
+            BuildableName = "Beginner Theory.app"
             BlueprintName = "Music-iOS-App"
             ReferencedContainer = "container:Music-iOS-App.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A56AB9C92CC96AE200D35FA8"
-            BuildableName = "Music-iOS-Theory.app"
+            BuildableName = "Beginner Theory.app"
             BlueprintName = "Music-iOS-App"
             ReferencedContainer = "container:Music-iOS-App.xcodeproj">
          </BuildableReference>
