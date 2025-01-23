@@ -14,6 +14,29 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>SQLite (Playground).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>A56AB9C92CC96AE200D35FA8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A56AB9D92CC96AE400D35FA8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A56AB9E32CC96AE400D35FA8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 	</dict>
 </dict>
 </plist>
