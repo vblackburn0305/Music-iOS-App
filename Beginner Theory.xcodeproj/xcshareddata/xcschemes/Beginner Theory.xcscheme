@@ -18,7 +18,7 @@
                BlueprintIdentifier = "A56AB9C92CC96AE200D35FA8"
                BuildableName = "Beginner Theory.app"
                BlueprintName = "Beginner Theory"
-               ReferencedContainer = "container:Music-iOS-App.xcodeproj">
+               ReferencedContainer = "container:Beginner Theory.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -36,9 +36,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A56AB9D92CC96AE400D35FA8"
-               BuildableName = "Music-iOS-AppTests.xctest"
-               BlueprintName = "Music-iOS-AppTests"
-               ReferencedContainer = "container:Music-iOS-App.xcodeproj">
+               BuildableName = "Beginner TheoryTests.xctest"
+               BlueprintName = "Beginner TheoryTests"
+               ReferencedContainer = "container:Beginner Theory.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -47,9 +47,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A56AB9E32CC96AE400D35FA8"
-               BuildableName = "Music-iOS-AppUITests.xctest"
-               BlueprintName = "Music-iOS-AppUITests"
-               ReferencedContainer = "container:Music-iOS-App.xcodeproj">
+               BuildableName = "Beginner TheoryUITests.xctest"
+               BlueprintName = "Beginner TheoryUITests"
+               ReferencedContainer = "container:Beginner Theory.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -71,7 +71,7 @@
             BlueprintIdentifier = "A56AB9C92CC96AE200D35FA8"
             BuildableName = "Beginner Theory.app"
             BlueprintName = "Beginner Theory"
-            ReferencedContainer = "container:Music-iOS-App.xcodeproj">
+            ReferencedContainer = "container:Beginner Theory.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -88,7 +88,7 @@
             BlueprintIdentifier = "A56AB9C92CC96AE200D35FA8"
             BuildableName = "Beginner Theory.app"
             BlueprintName = "Beginner Theory"
-            ReferencedContainer = "container:Music-iOS-App.xcodeproj">
+            ReferencedContainer = "container:Beginner Theory.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
