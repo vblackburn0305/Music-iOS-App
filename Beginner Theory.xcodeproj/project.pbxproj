@@ -28,15 +28,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A56AB9CA2CC96AE200D35FA8 /* Music-iOS-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Music-iOS-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A56AB9DA2CC96AE400D35FA8 /* Music-iOS-AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Music-iOS-AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A56AB9E42CC96AE400D35FA8 /* Music-iOS-AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Music-iOS-AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A56AB9CA2CC96AE200D35FA8 /* Beginner Theory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Beginner Theory.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A56AB9DA2CC96AE400D35FA8 /* Beginner TheoryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Beginner TheoryTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A56AB9E42CC96AE400D35FA8 /* Beginner TheoryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Beginner TheoryUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		A56AB9CC2CC96AE200D35FA8 /* Music-iOS-App */ = {
+		A56AB9CC2CC96AE200D35FA8 /* Beginner Theory */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "Music-iOS-App";
+			path = "Beginner Theory";
 			sourceTree = "<group>";
 		};
 		A56AB9DD2CC96AE400D35FA8 /* Music-iOS-AppTests */ = {
@@ -80,7 +80,7 @@
 		A56AB9C12CC96AE200D35FA8 = {
 			isa = PBXGroup;
 			children = (
-				A56AB9CC2CC96AE200D35FA8 /* Music-iOS-App */,
+				A56AB9CC2CC96AE200D35FA8 /* Beginner Theory */,
 				A56AB9DD2CC96AE400D35FA8 /* Music-iOS-AppTests */,
 				A56AB9E72CC96AE400D35FA8 /* Music-iOS-AppUITests */,
 				A5ED0F872D29F6C600838B95 /* Frameworks */,
@@ -91,9 +91,9 @@
 		A56AB9CB2CC96AE200D35FA8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A56AB9CA2CC96AE200D35FA8 /* Music-iOS-App.app */,
-				A56AB9DA2CC96AE400D35FA8 /* Music-iOS-AppTests.xctest */,
-				A56AB9E42CC96AE400D35FA8 /* Music-iOS-AppUITests.xctest */,
+				A56AB9CA2CC96AE200D35FA8 /* Beginner Theory.app */,
+				A56AB9DA2CC96AE400D35FA8 /* Beginner TheoryTests.xctest */,
+				A56AB9E42CC96AE400D35FA8 /* Beginner TheoryUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -108,9 +108,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A56AB9C92CC96AE200D35FA8 /* Music-iOS-App */ = {
+		A56AB9C92CC96AE200D35FA8 /* Beginner Theory */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A56AB9EE2CC96AE400D35FA8 /* Build configuration list for PBXNativeTarget "Music-iOS-App" */;
+			buildConfigurationList = A56AB9EE2CC96AE400D35FA8 /* Build configuration list for PBXNativeTarget "Beginner Theory" */;
 			buildPhases = (
 				A56AB9C62CC96AE200D35FA8 /* Sources */,
 				A56AB9C72CC96AE200D35FA8 /* Frameworks */,
@@ -121,19 +121,19 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				A56AB9CC2CC96AE200D35FA8 /* Music-iOS-App */,
+				A56AB9CC2CC96AE200D35FA8 /* Beginner Theory */,
 			);
-			name = "Music-iOS-App";
+			name = "Beginner Theory";
 			packageProductDependencies = (
 				A5ED0F882D29F6C600838B95 /* SQLite */,
 			);
 			productName = "Music-iOS-App";
-			productReference = A56AB9CA2CC96AE200D35FA8 /* Music-iOS-App.app */;
+			productReference = A56AB9CA2CC96AE200D35FA8 /* Beginner Theory.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A56AB9D92CC96AE400D35FA8 /* Music-iOS-AppTests */ = {
+		A56AB9D92CC96AE400D35FA8 /* Beginner TheoryTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A56AB9F12CC96AE400D35FA8 /* Build configuration list for PBXNativeTarget "Music-iOS-AppTests" */;
+			buildConfigurationList = A56AB9F12CC96AE400D35FA8 /* Build configuration list for PBXNativeTarget "Beginner TheoryTests" */;
 			buildPhases = (
 				A56AB9D62CC96AE400D35FA8 /* Sources */,
 				A56AB9D72CC96AE400D35FA8 /* Frameworks */,
@@ -147,16 +147,16 @@
 			fileSystemSynchronizedGroups = (
 				A56AB9DD2CC96AE400D35FA8 /* Music-iOS-AppTests */,
 			);
-			name = "Music-iOS-AppTests";
+			name = "Beginner TheoryTests";
 			packageProductDependencies = (
 			);
 			productName = "Music-iOS-AppTests";
-			productReference = A56AB9DA2CC96AE400D35FA8 /* Music-iOS-AppTests.xctest */;
+			productReference = A56AB9DA2CC96AE400D35FA8 /* Beginner TheoryTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		A56AB9E32CC96AE400D35FA8 /* Music-iOS-AppUITests */ = {
+		A56AB9E32CC96AE400D35FA8 /* Beginner TheoryUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A56AB9F42CC96AE400D35FA8 /* Build configuration list for PBXNativeTarget "Music-iOS-AppUITests" */;
+			buildConfigurationList = A56AB9F42CC96AE400D35FA8 /* Build configuration list for PBXNativeTarget "Beginner TheoryUITests" */;
 			buildPhases = (
 				A56AB9E02CC96AE400D35FA8 /* Sources */,
 				A56AB9E12CC96AE400D35FA8 /* Frameworks */,
@@ -170,11 +170,11 @@
 			fileSystemSynchronizedGroups = (
 				A56AB9E72CC96AE400D35FA8 /* Music-iOS-AppUITests */,
 			);
-			name = "Music-iOS-AppUITests";
+			name = "Beginner TheoryUITests";
 			packageProductDependencies = (
 			);
 			productName = "Music-iOS-AppUITests";
-			productReference = A56AB9E42CC96AE400D35FA8 /* Music-iOS-AppUITests.xctest */;
+			productReference = A56AB9E42CC96AE400D35FA8 /* Beginner TheoryUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -200,7 +200,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A56AB9C52CC96AE200D35FA8 /* Build configuration list for PBXProject "Music-iOS-App" */;
+			buildConfigurationList = A56AB9C52CC96AE200D35FA8 /* Build configuration list for PBXProject "Beginner Theory" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -217,9 +217,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A56AB9C92CC96AE200D35FA8 /* Music-iOS-App */,
-				A56AB9D92CC96AE400D35FA8 /* Music-iOS-AppTests */,
-				A56AB9E32CC96AE400D35FA8 /* Music-iOS-AppUITests */,
+				A56AB9C92CC96AE200D35FA8 /* Beginner Theory */,
+				A56AB9D92CC96AE400D35FA8 /* Beginner TheoryTests */,
+				A56AB9E32CC96AE400D35FA8 /* Beginner TheoryUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -275,12 +275,12 @@
 /* Begin PBXTargetDependency section */
 		A56AB9DC2CC96AE400D35FA8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A56AB9C92CC96AE200D35FA8 /* Music-iOS-App */;
+			target = A56AB9C92CC96AE200D35FA8 /* Beginner Theory */;
 			targetProxy = A56AB9DB2CC96AE400D35FA8 /* PBXContainerItemProxy */;
 		};
 		A56AB9E62CC96AE400D35FA8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A56AB9C92CC96AE200D35FA8 /* Music-iOS-App */;
+			target = A56AB9C92CC96AE200D35FA8 /* Beginner Theory */;
 			targetProxy = A56AB9E52CC96AE400D35FA8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -413,7 +413,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Music-iOS-App/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Beginner Theory/Preview Content\"";
 				DEVELOPMENT_TEAM = SY5HZSZ2Z2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -429,8 +429,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.myorganization.Music-iOS-App";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.myorganization.Beginner Theory";
+				PRODUCT_NAME = "Beginner Theory";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -450,7 +450,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Music-iOS-App/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Beginner Theory/Preview Content\"";
 				DEVELOPMENT_TEAM = SY5HZSZ2Z2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -466,8 +466,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.myorganization.Music-iOS-App";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.myorganization.Beginner Theory";
+				PRODUCT_NAME = "Beginner Theory";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -494,7 +494,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Music-iOS-App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Music-iOS-App";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Beginner Theory.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Beginner Theory";
 			};
 			name = Debug;
 		};
@@ -513,7 +513,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Music-iOS-App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Music-iOS-App";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Beginner Theory.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Beginner Theory";
 			};
 			name = Release;
 		};
@@ -554,7 +554,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A56AB9C52CC96AE200D35FA8 /* Build configuration list for PBXProject "Music-iOS-App" */ = {
+		A56AB9C52CC96AE200D35FA8 /* Build configuration list for PBXProject "Beginner Theory" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A56AB9EC2CC96AE400D35FA8 /* Debug */,
@@ -563,7 +563,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A56AB9EE2CC96AE400D35FA8 /* Build configuration list for PBXNativeTarget "Music-iOS-App" */ = {
+		A56AB9EE2CC96AE400D35FA8 /* Build configuration list for PBXNativeTarget "Beginner Theory" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A56AB9EF2CC96AE400D35FA8 /* Debug */,
@@ -572,7 +572,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A56AB9F12CC96AE400D35FA8 /* Build configuration list for PBXNativeTarget "Music-iOS-AppTests" */ = {
+		A56AB9F12CC96AE400D35FA8 /* Build configuration list for PBXNativeTarget "Beginner TheoryTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A56AB9F22CC96AE400D35FA8 /* Debug */,
@@ -581,7 +581,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A56AB9F42CC96AE400D35FA8 /* Build configuration list for PBXNativeTarget "Music-iOS-AppUITests" */ = {
+		A56AB9F42CC96AE400D35FA8 /* Build configuration list for PBXNativeTarget "Beginner TheoryUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A56AB9F52CC96AE400D35FA8 /* Debug */,
