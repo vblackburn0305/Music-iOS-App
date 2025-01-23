@@ -6,9 +6,9 @@ struct Music_iOS_AppApp: App {
     init() {
         // inserts quizzes into the database
         // prepares the app with the quiz data
-        DatabaseManager.shared.insertQuiz(levelName: "Level 1")
-        DatabaseManager.shared.insertQuiz(levelName: "Level 2")
-        DatabaseManager.shared.insertQuiz(levelName: "Level 3")
+        DatabaseManager.shared.insertQuiz(levelName: "Grade 1")
+        DatabaseManager.shared.insertQuiz(levelName: "Grade 2")
+        DatabaseManager.shared.insertQuiz(levelName: "Grade 3")
     }
     
     var body: some Scene {
