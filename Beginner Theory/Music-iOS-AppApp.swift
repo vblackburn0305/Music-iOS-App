@@ -14,6 +14,8 @@ struct Music_iOS_AppApp: App {
     var body: some Scene {
         WindowGroup { // main window
             Music_iOS_App_Tab_View() // specifies the main window and the root scene
+                // Force Light Mode for all views in this hierarchy
+                .preferredColorScheme(.light)
                 .onAppear() {
                    // print(URL.documentsDirectory.path())
                 }
